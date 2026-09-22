@@ -1,0 +1,7 @@
+Metric,Value
+Customers,1500.0
+Orders,7500.0
+Total revenue,1891205.39
+Repurchase ROC-AUC,0.901
+Revenue MAE,34.17
+Revenue R²,0.994
