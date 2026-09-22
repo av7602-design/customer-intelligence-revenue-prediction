@@ -1,49 +1,124 @@
 # Customer Intelligence & Revenue Prediction Platform
 
-An end-to-end Data Science and BI project for analyzing e-commerce customer behavior,
-segmenting customers, predicting repurchase behavior and estimating 90-day customer revenue.
+> An end-to-end Data Science and Business Intelligence project for customer segmentation, repurchase prediction, revenue prediction, and interactive Power BI analytics.
 
-## Tech Stack
-Python, Pandas, NumPy, SQL, Scikit-learn, Matplotlib/Power BI
+---
 
-## Workflow
-1. Data preparation and validation
-2. Exploratory data analysis
-3. RFM feature engineering
-4. K-Means customer segmentation
-5. Repurchase prediction using Random Forest
-6. 90-day revenue prediction using Random Forest Regression
-7. Power BI-ready business dashboards
+## 📌 Project Overview
 
-## Dataset
-This project package includes a **synthetically generated e-commerce dataset** for reproducible demonstration.
-It contains 1,500 customers and 7,500 orders. Because the data is synthetic,
-do not describe it on your resume as real company/customer data.
+The **Customer Intelligence & Revenue Prediction Platform** is an end-to-end Data Science and Business Intelligence solution designed to analyze customer purchasing behavior and generate actionable business insights.
 
-## Current model results on the included synthetic data
-- Repurchase model ROC-AUC: 0.901
-- Revenue model MAE: 34.17
-- Revenue model R²: 0.994
+The project combines:
 
-These metrics are demonstration results from the included synthetic dataset. If you replace the data,
-retrain the models and update the resume metrics with your actual results.
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- RFM (Recency, Frequency, Monetary) analysis
+- K-Means customer segmentation
+- Machine Learning for repurchase prediction
+- Machine Learning for revenue prediction
+- SQL-based customer and sales analysis
+- Interactive Power BI analytics
 
-## Power BI
-Import:
-- powerbi_monthly_revenue.csv
-- powerbi_category_performance.csv
-- powerbi_customer_segments.csv
-- customer_features.csv
+The goal is to help businesses understand **who their valuable customers are, which customers are likely to repurchase, and how customer behavior influences future revenue**.
 
-Recommended visuals:
-- KPI cards: Revenue, Orders, Customers, AOV
-- Line chart: Monthly revenue
-- Bar chart: Category revenue
-- Donut/bar chart: Customer segments
-- Scatter: Recency vs Monetary
-- Table: Repurchase probability and predicted revenue
+---
 
-## Resume version
-**Customer Intelligence & Revenue Prediction Platform | 2026**
-- Analyzed customer data using Python, SQL, and EDA, identifying purchasing patterns, customer behavior, and revenue trends.
+## 🎯 Business Problem
+
+Businesses generate large amounts of customer and transaction data but often struggle to convert this data into actionable decisions.
+
+This project addresses key business questions such as:
+
+- Which customers are the most valuable?
+- How can customers be grouped based on purchasing behavior?
+- Which customers are likely to make another purchase?
+- What revenue can be expected from customers?
+- Which product categories generate the most revenue?
+- How do customer segments and purchasing patterns change over time?
+
+---
+
+## 🚀 Key Features
+
+### 1. Customer Data Analysis
+
+Processed customer and transaction-level data using Python to identify:
+
+- Customer purchasing patterns
+- Order frequency
+- Spending behavior
+- Revenue trends
+- Customer activity
+
+### 2. RFM Customer Segmentation
+
+Performed **RFM analysis** using:
+
+- **Recency** – How recently a customer purchased
+- **Frequency** – How frequently a customer purchases
+- **Monetary** – How much a customer spends
+
+K-Means clustering was then applied to group customers according to their purchasing behavior.
+
+### 3. Repurchase Prediction
+
+Built a Machine Learning classification pipeline to predict whether a customer is likely to make another purchase.
+
+The model can support customer retention and targeted marketing strategies.
+
+### 4. Revenue Prediction
+
+Developed a Machine Learning regression pipeline to estimate future customer revenue based on customer-level behavioral features.
+
+### 5. SQL Analytics
+
+Created SQL queries to analyze:
+
+- Customer purchasing behavior
+- Revenue
+- Order activity
+- Product categories
+- Customer segments
+
+### 6. Power BI Analytics
+
+Prepared Power BI-ready datasets for interactive business intelligence dashboards covering:
+
+- Monthly revenue
+- Category performance
+- Customer segments
+- Customer behavior
+- Revenue trends
+
+---
+
+## 🧠 Machine Learning Workflow
+
+```text
+Raw Customer & Order Data
+          │
+          ▼
+Data Cleaning & Preprocessing
+          │
+          ▼
+Exploratory Data Analysis
+          │
+          ▼
+Feature Engineering
+          │
+          ├───────────────┐
+          ▼               ▼
+    RFM Analysis     Customer Features
+          │               │
+          ▼               ├───────────────┐
+    K-Means            Repurchase       Revenue
+   Segmentation        Prediction      Prediction
+          │               │               │
+          └───────────────┴───────────────┘
+                          │
+                          ▼
+                   Business Insights
+                          │
+                          ▼
+                    Power BI Dashboardpatterns, customer behavior, and revenue trends.
 - Applied RFM + K-Means segmentation, built ML models for repurchase and revenue prediction, and developed a Power BI dashboard for business insights.
